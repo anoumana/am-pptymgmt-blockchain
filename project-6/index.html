@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Staycation</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center;">Staycation Rentals</h1>
+        <hr>
+        <p style="text-align: center;">Rental Property Mgmt using the Ethereum blockchain.</p>
+    </div>
+
+    <div id="ftc-harvest">
+        <h2>Subscribe Your Rental with Property Manager and Cleaning Company</h2>
+        <div class="form-group">
+            Rental Name:
+            <br>
+            <input class="input-field" type="text" id="rentalName" name="rentalName" value="Beach house"><br>
+            Property Mgr ID:
+            <br>
+            <input type="text" id="pptyMgrID" name="pptyMgrID" value="0xbcae5e1fd1098989c5d1de554acd50808c32873f" size="50"><br>
+            Cleaning Company ID:
+            <br>
+            <input type="text" id="cleaningCmpID" name="cleaningCmpID" value="0x8c6e45ad15fdf13abbe25180356bdbe14e3bf74c" size="50"><br>
+            <br>
+            <div class=button-div>
+                <button class="btn-subscribe" id="button" type="button" data-id="1">Subscribe</button>
+            </div>
+        </div>
+        <div class=form-break></div>
+        <h2>Register Your Rental Info</h2>
+        <div class="form-group">
+            Rental ID:
+            <br>
+            <input class="input-field" type="number" id="rentalID" name="rentalID" value="1"><br>
+            Rental Address:
+            <br>
+            <input class="input-field" type="text" id="rentalAddress" name="rentalAddress" value="429 Kaanapali, Hawaii"><br>
+            Rental Notes:
+            <br>
+            <input class="input-field" type="text" id="rentalNotes" name="rentalNotes" value="4 bedroom, 5 baths. Ocean view"><br>
+            Rental Price Per Day:
+            <br>
+            <input type="number" id="rentalPricePerDay" name="rentalPricePerDay" value="100" size="50"><br>
+            <!-- Rental Owner ID:
+            <br>
+            <input type="text" id="rentalOwnerID" name="rentalOwnerID" value="0x963865f57804b38459dd4b2da2f760211a200438" size="50"><br>
+            <br> -->
+            <div class=button-div>
+                <button class="btn-register" id="button" type="button" data-id="2">Register Rental</button>
+            </div>
+        </div>
+
+        <div class=form-break></div>
+        <h2>Book Your Rental </h2>
+        <div class="form-group">
+            Rental ID:
+            <br>
+            <input class="input-field" type="number" id="rentalID" name="rentalID" value="1"><br>
+            Rental Days:
+            <br>
+            <input class="input-field" type="number" id="rentalDays" name="rentalDays" value="1"><br>
+            <div class=button-div>
+                <button class="btn-register" id="button" type="button" data-id="3">Book Rental</button>
+            </div>
+        </div>
+
+        <div class=form-break></div>
+        <h2>Rental Information</h2>
+        <div class="form-group">
+            Rental ID:
+            <br>
+            <input class="input-field" type="number" id="rentalID" name="rentalID" value="1"><br>
+            <span id="rentalPptyInfo"></span> <br>
+            <div class=button-div>
+                <button class="btn-register" id="button" type="button" data-id="4">Get Rental Info</button>
+                <button class="btn-harvest" id="button" type="button" data-id="5">Schedule Cleaning</button>
+                <button class="btn-process" id="button" type="button" data-id="6">Cleaning Done</button>
+                <button class="btn-pack" id="button" type="button" data-id="7">Check In</button>
+                <button class="btn-forsale" id="button" type="button" data-id="8">Check Out</button>
+                </div>
+        </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- <script src="js/web3.min.js"></script> -->
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
